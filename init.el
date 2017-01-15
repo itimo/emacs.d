@@ -106,7 +106,8 @@
 (require 'init-rails)
 (require 'init-sql)
 
-(require 'init-paredit)
+;; (require 'init-paredit) Disable paredit
+(require 'init-smartparens)
 (require 'init-lisp)
 (require 'init-slime)
 (unless (version<= emacs-version "24.2")

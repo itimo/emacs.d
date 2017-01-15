@@ -147,9 +147,9 @@
   (when (bound-and-true-p indent-guide-mode)
     (indent-guide-mode -1)))
 
+;; Removed paredit-mode from list
 (defvar sanityinc/lispy-modes-hook
-  '(enable-paredit-mode
-    turn-on-eldoc-mode
+  '(turn-on-eldoc-mode
     redshank-mode
     sanityinc/disable-indent-guide
     sanityinc/enable-check-parens-on-save)
