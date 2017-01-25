@@ -26,6 +26,9 @@
 ;;----------------------------------------------------------------------------
 ;; Bootstrap config
 ;;----------------------------------------------------------------------------
+(if system-type "windows-nt"
+  nill)
+
 (setq custom-file (expand-file-name "custom.el" user-emacs-directory))
 (require 'init-compat)
 (require 'init-utils)
@@ -107,7 +110,7 @@
 (require 'init-sql)
 
 ;; (require 'init-paredit) Disable paredit
-(require 'init-smartparens)
+;; (require 'init-smartparens)
 (require 'init-lisp)
 (require 'init-slime)
 (unless (version<= emacs-version "24.2")
