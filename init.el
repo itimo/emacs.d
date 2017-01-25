@@ -27,6 +27,7 @@
 ;; Bootstrap config
 ;;----------------------------------------------------------------------------
 (if system-type "windows-nt"
+  (setq  gnutls-trustfiles (list '"C:\\Install\\emacs\\bin\\cacert.pem")) ;; Cert-files for windows
   nill)
 
 (setq custom-file (expand-file-name "custom.el" user-emacs-directory))
